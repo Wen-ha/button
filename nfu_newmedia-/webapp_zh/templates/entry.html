@@ -1,0 +1,21 @@
+﻿
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<input type="radio" name="sex" value="中文" checked>中文
+<input type="radio" name="sex" value="英文">英文
+<tr><td>翻译吧: </td><td><input type="text" name="words" /></td></tr>
+<tr><td>color: <input type="color" id="myColor">
+
+</table>
+<p>选择中文或英文，输入所需后,点击“翻译”按钮：</p>
+<p><input value='翻译' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
+
